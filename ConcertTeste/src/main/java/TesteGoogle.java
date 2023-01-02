@@ -38,7 +38,7 @@ public class TesteGoogle {
 		
 		
 
-}
+   }
 @Test
 public void  clicarAbaPrivacidade() {			
 	
@@ -49,7 +49,9 @@ public void  clicarAbaPrivacidade() {
 	driver.findElement(By.cssSelector("#cookieBar > div > span.cookieBarButtons > a.cookieBarButton.cookieBarConsentButton")).click();
 	 Assert.assertTrue(driver.findElement(By.tagName("body")).getText()
 			 .contains("Nossa missão é organizar as informações do mundo para que sejam universalmente acessíveis e úteis para todos."));
-			 
-}
+	
+	 
+	 driver.quit();		 
+    }
 }
 
